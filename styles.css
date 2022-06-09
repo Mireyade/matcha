@@ -52,6 +52,10 @@ input{
     display: block;
   }
 
-
+.imgOverview{
+    width:1300px;
+    margin: auto;
+    display: block;
+}
 
 
