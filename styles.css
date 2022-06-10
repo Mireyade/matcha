@@ -1,6 +1,7 @@
 body{
     background-color: #fffbf7;
 }
+
 h1 {
     color: #025157;
     text-align: center;
@@ -8,18 +9,19 @@ h1 {
     font-size: 50px;
   }
 
-button,input{
-    padding:6px 20px;
-    border-width: 1px;
-    border-radius: 8px;
-}
-
 /*Pending to check the proper way to center this*/
 .form{
     margin:auto;
     width:16%;
     display:flex;
 }
+
+button,input{
+    padding:6px 20px;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
 
 button{
     background-color:#025157;
