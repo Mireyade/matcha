@@ -2,17 +2,41 @@
 <html>
 
 <head>
-  <!-- Aquí va información importante pero no visible dentro del navegador -->
   <title>Matcha</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  <!-- Esto es lo que se verá en el navegador web -->
+  <header class="header">
+    <!--logo-->
+    <a href="" class="logo">
+      <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha"/>
+    </a>
+    <!--Navigation menu-->
+    <nav class="navBar">
+      <ul>
+        <il><a href="">Platform</a></il>
+        <il><a href="">Pricing</a></il>
+        <il><a href="">Customers</a></il>
+        <il><a href="">Resources</a></il>
+        <il><a href="">About</a></il>
+      </ul>
+    </nav>
+      <!--Container with user's actions **They use a div instead of form-->
+      <form class="actions">
+        <a href="/login">Sign In</a>
+        <button id="greenButton" type="submit">Start free trial</button>
+      </form>
+  </header>
+<section class="main">
   <h1>Build your blog. Build your business.</h1>
   <p class="generalParagraph">Instantly publish articles, drive more traffic, grow your email list, and see your blog’s
     impact on sales.</p>
-  <form class="form">
+  <form class="signUpForm">
     <input type="email" placeholder="Enter email address" />
     <button type="submit">Try it now &rarr;</button>
   </form>
@@ -21,6 +45,7 @@
   <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="CapterraLogo" />
   <img class="imgOverview" src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png"
     alt="Matcha overview" />
+  </section>
 </body>
 
 </html>

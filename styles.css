@@ -1,29 +1,89 @@
 body{
     background-color: #fffbf7;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     color: #025157;
     text-align: center;
-    font-family: serif;
-    font-size: 50px;
+    font-size: 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
 
+.header{
+    margin: 40px 20px;
+    font-size: 0;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 45px;
+    line-height: 45px;
+
+}
+
+.logo , .actions {
+    width: 15%;
+}
+
+.logo > img {
+    width: 15%;
+}
+
+.navBar {
+    width: 70%;
+    color: #025157;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navBar il a{
+    margin-left: 8px;
+    text-decoration: none;
+    color:#025157;
+    
+}
+
+.navBar il a:hover{
+    color: #3d3c3c;
+}
+
+.navBar il a:active{
+    color: #020202;
+}
+
+ .actions > a {
+    color:#67b54b;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;  
+}  
+
+.actions > a:hover {
+    color:#212529;   
+} 
+
+.main {
+    margin-top: 140px;
+    text-align: center;
+}
 /*Pending to check the proper way to center this*/
-.form{
+.signUpForm{
     margin:auto;
     width:16%;
     display:flex;
 }
 
-button,input{
+.signUpForm button,input{
     padding:6px 20px;
     border-width: 1px;
     border-radius: 8px;
 }
 
 
-button{
+.signUpForm button{
     background-color:#025157;
     color:#fff;
     margin-left:-10px;
@@ -34,16 +94,27 @@ button{
     cursor: pointer;
 }
 
+#greenButton {
+    background-color: #67b54b;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 45px;
+    padding: 12px 14px;
+
+}
+
 input{
     border-style: solid;
 }
 
-  .generalParagraph{
-      color:#46484c;
-      text-align: center;
-  }
+.generalParagraph{
+    color:#46484c;
+    text-align: center;
+}
 
-  .promotionalText{
+.promotionalText{
      text-align: center;
       color:#8b8b8bcc;
   }
