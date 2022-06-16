@@ -1,14 +1,26 @@
 body{
-    background-color: #f1e5d8;
+    background-color: #fffbf7;
     font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-    color: #025157;
     text-align: center;
     font-size: 60px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
+
+  h1, h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #025157;
+
+  }
+
+.fixedHeader{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: #fffbf7;
+}
 
 .header{
     margin: 40px 20px 0;
@@ -18,11 +30,11 @@ h1 {
 .header > * {
     display: inline-block;
     font-size: 16px;
-    vertical-align: middle;
     height: 45px;
     line-height: 45px;
-
+    vertical-align: middle;
 }
+
 
 .logo , .actions {
     width: 15%;
@@ -30,6 +42,7 @@ h1 {
 
 .logo > img {
     width: 15%;
+    margin-top:8px
 }
 
 .navBar {
@@ -39,10 +52,16 @@ h1 {
     text-align: left;
 }
 
+.navBar > ul {
+    width: 70%;
+    vertical-align: middle;
+    height : 45px;
+    margin : 5px 20px 0;
+}
+
 .navBar li a{
     margin-left: 8px;
     text-decoration: none;
-    color:#025157;
     
 }
 
@@ -50,8 +69,9 @@ h1 {
     color: #3d3c3c;
 }
 
-.navBar li a:active{
+.navBar ul li a:active{
     color: #020202;
+    text-decoration-line: underline;
 }
 
 li {
@@ -74,7 +94,7 @@ li {
 } 
 
 .main {
-    margin-top: 140px;
+    margin-top: 285px;
     text-align: center;
 }
 /*Pending to check the proper way to center this*/
@@ -139,4 +159,38 @@ input{
     display: block;
 }
 
+.promo{
+    display:flex;
+    align-items: center;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.video{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.publish h3 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
 
