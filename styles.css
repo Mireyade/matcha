@@ -1,6 +1,8 @@
 body{
     background-color: #fffbf7;
     font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
 }
 
 h1 {
@@ -19,51 +21,59 @@ h1 {
     top:0;
     left:0;
     right:0;
-    background-color: #fffbf7;
+    background-color:#fffbf7;
+
 }
 
 .header{
-    margin: 40px 20px 0;
-    font-size: 0;
+    /*margin: 40px 20px 0;
+    font-size: 0;*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 70px;
+    height: 70px;
 }
 
 .header > * {
-    display: inline-block;
-    font-size: 16px;
-    height: 45px;
-    line-height: 45px;
     vertical-align: middle;
+    height:60px;
 }
 
-
-.logo , .actions {
-    width: 15%;
+.header > a{
+    flex-grow: 1;
 }
-
-.logo > img {
-    width: 15%;
-    margin-top:8px
-}
-
-.navBar {
-    width: 70%;
-    color: #025157;
-    font-weight: 500;
-    text-align: left;
-}
-
-.navBar > ul {
-    width: 70%;
+.header > a .logo{
+    width:40px;
     vertical-align: middle;
-    height : 45px;
-    margin : 5px 20px 0;
-    padding:0;
+    align-self: center;
+    margin-left: 30px;
+}
+
+.header > nav{
+    flex-grow: 6;
+    height:60px;
+}
+
+.header > .actions{
+    flex-grow: 1;
+    margin-right: -90px;
+}
+
+.navBar ul{
+    list-style-type:none;
+    text-decoration: none;
+    vertical-align: middle;  
+    height:60px;
+    margin-top: 0;
+}
+
+li {
+    display: inline;
 }
 
 .navBar li a{
-    margin-left: 8px;
     text-decoration: none;
-    
 }
 
 .navBar li a:hover{
@@ -72,12 +82,9 @@ h1 {
 
 .navBar ul li a:active{
     color: #020202;
-    text-decoration-line: underline;
 }
 
-li {
-    display: inline;
-}
+
 
 .actions {
     text-align: left;
@@ -88,7 +95,7 @@ li {
     margin-right: 10px;
     margin-left: 10px;
     text-decoration: none;  
-}  
+}
 
 .actions > a:hover {
     color:#212529;   
@@ -155,7 +162,7 @@ input{
       color:#8b8b8bcc;
   }
 
-  img{
+.logoCapterra{
     width:150px;
     margin: auto;
     display: block;
