@@ -90,7 +90,7 @@ li {
 .actions {
     text-align: left;
 }
- .actions > a {
+ .actions > a , .feature-card > a{
     color:#67b54b;
     font-size: 14px;
     margin-right: 10px;
@@ -313,4 +313,60 @@ width:300px;
 
 li h3,h2{
     margin:5px ;
+}
+
+/*CSS for Features section*/
+
+.features{
+    display:grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    background-color: #025157;
+    height:800px;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.feature-card{
+    background-color: #fffbf7;
+    display:flex;
+    border-radius: 8px;
+    flex-flow: column wrap;
+    align-items: center;
+    margin:40px 40px;
+    overflow: hidden;
+}
+
+.img-feature-card{
+    order:1;
+    width:30px;
+    align-self:flex-start;
+    margin-left:5px;
+}
+
+.feature-card > h3 {
+    order:2;
+    align-self:flex-start;
+    margin-left:5px;
+}
+
+.feature-card > p {
+    order:2;
+    align-self:flex-start;
+    margin-left:5px;
+    word-wrap: break-word;
+}
+
+.feature-card > a {
+    order:4;
+    align-self:flex-start;
+    margin-left:5px;
+}
+
+.feature-card > .img-feature-card-right{
+    order: 5;
+    width:80px;
+    max-width: 100%;
+    flex-grow: 0;
+    flex-basis: 80%;
+    align-self: flex-end;
 }
