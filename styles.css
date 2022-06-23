@@ -74,6 +74,7 @@ li {
 
 .navBar li a{
     text-decoration: none;
+    color:#025157;
 }
 
 .navBar li a:hover{
