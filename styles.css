@@ -370,3 +370,64 @@ li h3,h2{
     flex-basis: 80%;
     align-self: flex-end;
 }
+
+/*How does Matcha work section*/
+
+/*This is our grid container for the How it works section*/
+.how-it-works{
+    display:grid;
+    grid-auto-rows: repeat 5,minmax(250px, auto);
+    grid-auto-columns: 300px;
+    grid-gap: 20px;
+    background-color:#fffbf7;
+    justify-content: center;
+    align-content: center;
+    padding: 5%;
+}
+
+.hiw-card{
+    background-color: #fff;
+    border: 1px solid #67b54b;
+}
+
+.how-it-works .hiw-card img{
+    width: 250px;
+}
+
+.hiw-header{
+grid-column: span 4;
+text-align: center;
+
+}
+
+.hiw-card2{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+}
+
+.hiw-card3{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+
+}
+
+.hiw-card4{
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+
+}
+
+.hiw-card5{
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+
+}
+
+.hiw-card p {
+    height: 100px;
+}
+
+.hiw-card a {
+    margin: 5px;
+}
