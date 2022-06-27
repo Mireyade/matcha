@@ -90,7 +90,7 @@ li {
 .actions {
     text-align: left;
 }
- .actions > a , .feature-card > a{
+ .actions > a , .feature-card > a , .hiw-card > a{
     color:#67b54b;
     font-size: 14px;
     margin-right: 10px;
@@ -103,11 +103,11 @@ li {
 } 
 
 .main {
-    margin-top: 285px;
+    margin-top: 150px;
     text-align: center;
 }
 /*Pending to check the proper way to center this*/
-.signUpForm{
+.sign-up-form{
     margin:auto;
     width:16%;
     display:flex;
@@ -119,7 +119,7 @@ button,input{
     border-radius: 8px;
 }
 
-
+/*
 button{
     background-color:#025157;
     color:#fff;
@@ -129,7 +129,24 @@ button{
     border-bottom-left-radius: 0;
     padding: 7px 20px;
     cursor: pointer;
+} */
+
+/*Sign Up form style for bootstrap*/
+.general-signup{
+    background-color:#025157;
+    color:#fff;
+
 }
+
+.mb-3{
+margin-left: 1rem;
+
+}
+
+.input-group{
+    width:90%;
+}
+/*end Sign Up form style for bootstrap*/
 
 .generalButton {
     background-color:#025157;
@@ -147,6 +164,11 @@ button{
     height: 45px;
     padding: 12px 14px;
 
+}
+
+.green-button{
+    background-color: #67b54b;
+    color: #fff;
 }
 
 input{
@@ -180,11 +202,12 @@ input{
     align-items: center;
     width: 70%;
     margin: 100px auto;
+    flex-direction: row;
 }
 
-.video{
+.video video{
     display:flex;
-    flex-direction: column;
+    width:500px;
 }
 
 .video img {
@@ -214,18 +237,36 @@ input{
 
 .stories-overview{
     display:flex;
-    width:70%;
-    padding: 15% 15%;
+    width:100%;
+    padding: 3% 3%;
     justify-content: space-around;
     background-color:#a1d683;
-    height: 600px;
+    height: 950px;
+}
+
+.carousel{
+    display: flex;
+    width:30%;
+    flex-direction: column;
+    background-color: #fffbf7;
+    border-radius: 8px 8px 8px 8px ;
 }
 
 .success-stories{
     display:flex;
     flex-direction: column; 
-    width:60%;
+    width:50%;
+    justify-content: space-around;
+
+}
+
+/*
+.success-stories{
+    display:flex;
+    flex-direction: column; 
+    width:50%;
     margin-top: 0;
+    vertical-align: middle;
 
 }
 
@@ -301,15 +342,35 @@ background-color: rgba(0, 0, 0, .2);
     list-style: none;
     border:none;
 }
+*/
+
 
 figure > img {
 width:300px;
+margin-top:3%;
+align-content: center;
 }
 
+
+
 .slide > img{
+    width:50%;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.carousel-item > img{
     width:100%;
     border-radius: 8px 8px 0 0 ;
 }
+
+.carousel-item > h3{
+margin-top:2%;
+}
+
+.carousel-item > h2{
+    margin-bottom: 10%;
+    }
+
 
 li h3,h2{
     margin:5px ;
@@ -376,8 +437,6 @@ li h3,h2{
 /*This is our grid container for the How it works section*/
 .how-it-works{
     display:grid;
-    grid-auto-rows: repeat 5,minmax(250px, auto);
-    grid-auto-columns: 300px;
     grid-gap: 20px;
     background-color:#fffbf7;
     justify-content: center;
@@ -390,8 +449,13 @@ li h3,h2{
     border: 1px solid #67b54b;
 }
 
-.how-it-works .hiw-card img{
-    width: 250px;
+.how-it-works {
+    width: 100%
+}
+
+.hiw-card img{
+    width:100%;
+    height:330px;
 }
 
 .hiw-header{
@@ -428,9 +492,7 @@ text-align: center;
     height: 100px;
 }
 
-.hiw-card a {
-    margin: 5px;
-}
+
 
 /**responsive design CSS*/
 
@@ -448,14 +510,32 @@ text-align: center;
        margin-top: 160px ;
     }
 
-    /*section promo, this is not really needed*/
+    /*section promo*/
     .banner img {
-        width:100%
+        width:80%
+    }
+
+    .promo{
+        flex-direction: column;
+    }
+    
+    .video video{
+        display:flex;
+        width:300px;
+    }
+
+    .video img{
+        width:25px;
+    }
+
+    .publish {
+        margin-left: 0px;
+        margin-top: 10px;
     }
 
     .publish > form {
     flex-direction: column;
-  }
+    }
 
   .publish > form > div {
     height: 50px;
@@ -466,10 +546,9 @@ text-align: center;
     width: 65%;
   }
 
-  .publish > form > div > button {
+  .publish > form > div > .publish-button {
     background-color:#025157;
     color:#fff;
-    border-radius: 8px;
     margin: 2px;
   }
 
@@ -491,7 +570,58 @@ text-align: center;
     display: none;
   }
 
-}
+
+  /*Style for Success cases section*/
+  .stories-overview{
+    flex-direction: column;
+    width:100%;
+    height:auto;
+  
+  }
+
+  .success-stories{
+    width:100%;
+    justify-content: space-around;
+
+  }
+
+  .carousel {
+    width:100%;
+  }
+
+
+  /*Section How it works*/
+
+    
+    .hiw-card2{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        grid-column: span 4;
+    
+    }
+    
+    .hiw-card3{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        grid-column: span 4;
+    
+    }
+    
+    .hiw-card4{
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        grid-column: span 4;
+    
+    }
+    
+    .hiw-card5{
+        grid-row: 5 / 6;
+        grid-column: 1 / 2;
+        grid-column: span 4;
+    
+    }
+  }
+
 
 @media (min-width: 576px) and (max-width:767px) {
     body {
