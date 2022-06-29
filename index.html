@@ -44,7 +44,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img width="50px" class="logo"
+      <a class="navbar-brand" href="/matcha/index.html"><img width="50px" class="logo"
           src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +53,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Platform</a>
+            <a class="nav-link active" aria-current="page" href="/matcha/index.html">Platform</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="/matcha/pricing.html">Pricing</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Customers</a>
@@ -178,7 +178,8 @@
     </article>
   </section>
 
-  <section class="stories-overview">
+  <section class="stories-overview">  
+
     <article class="success-stories my-auto">
       <h3>Growing ecommerce brands rely on Matcha</h3>
       <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on sales?
@@ -189,36 +190,9 @@
         <img class="img-brands" src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands" />
       </figure>
     </article>
-    <!--
-    <article aria-label="study cases" class="study-case">
-      <div class="carousel" data-carousel>
-        <button class="carousel-button prev" data-carousel-button="prev">&lt;</button>
-        <button class="carousel-button next" data-carousel-button="next">&gt;</button>
-        <ul data-slides>
-          <li class="slide" data-active>
-            <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-              alt="Everly Worker" />
-            <h3>Everly</h4>
-            <h2>Early-Stage CPG Brand Increases Lead Conversion 20x,
-            Ecommerce Revenue 20%</h2>
-          </li>
-          <li class="slide">
-            <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
-              alt="Mambe Workers" />
-              <h3>Mambe</h4>
-              <h2>How Mambe Increased Conversions by 327%, Reduced CPL by 60%</h2>
-          </li>
-          <li class="slide">
-            <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg" alt="Sea to Summit Worker" />
-            <h3>Sea to Summit</h4>
-            <h2>Sea to Summit's Ecommerce Site Traffic Climbs 189%, New Subscribers 820%</h2>
-          </li>
-        </ul>
-      </div>
-    </article>
 
--->
-    <article id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+    <article class="stories-carousel">
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade mx-auto" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -227,37 +201,74 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="width:100%; padding-bottom: 45px;">
+        <!--Carousel item 1-->
         <div class="carousel-item active">
-          <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-            alt="Everly Worker">
-          <h3>Everly</h3>
-          <h2>Early-Stage CPG Brand Increases Lead Conversion 20x,Ecommerce Revenue 20%</h2>
+          <div class="card w-100">
+            <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+            alt="Everly Worker" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Everly</h3>
+              <h2 class="card-text">Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue 20%</h2>
+              <div class="results">
+                <img id="logo-card" src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png "/>
+                <p class="card-text">22% of monthly revenue influenced by content</p>
+              </div>
+            </div>
+            <div class="card-footer mx-auto">
+              <a href="#" class="btn btn-primary generalButton">See Study Case</a>
+            </div>
+            <div class="company-logo">
+              <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt="Everly logo"/>
+            </div>
+          </div>
         </div>
+        <!--Carousel item 2-->
         <div class="carousel-item">
-          <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
-           alt="Mambe Workers">
-          <h3>Mambe</h3>
-          <h2>How Mambe Increased Conversions by 327%, Reduced CPL by 60%</h2>
+          <div class="card w-100">
+            <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
+            alt="Mambe Worker" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Mambe</h3>
+              <h2 class="card-text">How Mambe Increased Conversions by 327%, Reduced CPL by 60%</h2>
+              <div class="results">
+                <img id="logo-card" src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png "/>
+                <p class="card-text">+327% more popup conversions at a 60% lower cost</p>
+              </div>
+            </div>
+            <div class="card-footer mx-auto">
+              <a href="#" class="btn btn-primary generalButton">See Study Case</a>
+            </div>
+            <div class="company-logo">
+              <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png" alt="Everly logo"/>
+            </div>
+          </div>  
         </div>
+        <!--Carousel item 3-->
         <div class="carousel-item">
-          <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
-            alt="Sea to Summit Worker">
-          <h3>Sea to Summit</h3>
-          <h2>Sea to Summit's Ecommerce Site Traffic Climbs 189%, New Subscribers 820%</h2>
+          <div class="card w-100">
+            <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
+            alt="Sea to Summit Worker" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title">Sea to Summit</h3>
+              <h2 class="card-text">Sea to Summit's Ecommerce Site Traffic Climbs 189%, New Subscribers 820%</h2>
+              <div class="results">
+                <img id="logo-card" src="https://indyme.com/wp-content/uploads/2020/11/shopping-cart-icon.png "/>
+                <p class="card-text">500% increase in traffic from social media</p>
+              </div>
+            </div>
+            <div class="card-footer mx-auto">
+              <a href="#" class="btn btn-primary generalButton">See Study Case</a>
+            </div>
+            <div class="company-logo">
+              <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png" alt="Everly logo"/>
+            </div>
+          </div>
         </div>
+
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </article>
+    </div>
+  </article>
 
   </section>
 
