@@ -1,6 +1,6 @@
-/** _global.scss */
+/** _global.scss **/
 /**Fonts**/
-/** placeholders */
+/** placeholders **/
 .blog .title {
   font-family: "Yanone Kaffeesatz", sans-serif;
   color: #135359;
@@ -60,6 +60,35 @@
 }
 .blog .read-more {
   text-decoration: underline;
+}
+
+.try-matcha {
+  background-color: #96d178;
+}
+
+.try-matcha > p {
+  color: #ffffff;
+}
+
+.try-matcha-more-details {
+  background-color: #025157;
+  display: flex;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+.try-matcha-more-details h3 {
+  color: #ffffff;
+}
+.try-matcha-more-details p {
+  color: #ffffff;
+}
+.try-matcha-more-details .category {
+  color: #67b54b;
+}
+
+.try-matcha-more-details .try-matcha-right {
+  color: #b3cbcd;
 }
 
 /*# sourceMappingURL=output.css.map */

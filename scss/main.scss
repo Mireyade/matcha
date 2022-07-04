@@ -76,5 +76,38 @@ $card-spacer-x: 2px;
     .read-more{
         text-decoration: underline;
     }
+  }
 
+  .try-matcha{
+     background-color: $bc-green;
     }
+
+  .try-matcha > p {
+    color: $white;
+  }
+
+  .try-matcha-more-details{
+      background-color: $dark-green-title;
+      display:flex;
+      margin: 0;
+      border-radius: 1rem;
+    }
+
+ .try-matcha-more-details{
+    & h3 {
+      color: $white;
+    }
+    & p {
+      color: $white;
+    }
+    & .category{
+      color: $green;
+    }
+
+   }
+
+  .try-matcha-more-details{
+    & .try-matcha-right{
+      color: #b3cbcd;
+    }
+  }
