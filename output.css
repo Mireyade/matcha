@@ -91,4 +91,12 @@
   color: #b3cbcd;
 }
 
+.input-group .general-signup:hover {
+  background-color: #67b54b;
+}
+
+.generalButton:hover {
+  background-color: #67b54b;
+}
+
 /*# sourceMappingURL=output.css.map */
